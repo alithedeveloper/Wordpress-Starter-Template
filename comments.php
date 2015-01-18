@@ -10,9 +10,9 @@
 
   // Ensuring that the template is not directly loaded
 
-//  if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( $_SERVER['SCRIPT_FILENAME'] ) ) {
-//	  wp_die( __( 'You cannot access this page directly', 'sonia' ), __( 'There has been an Error !!', 'sonia' ) );
-//  }
+	if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) {
+		wp_die( __( 'You cannot access this page directly', 'sonia' ), __( 'There has been an Error !!', 'sonia' ) );
+	}
 ?>
 
 <?php
